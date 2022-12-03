@@ -12,6 +12,7 @@ def count_calories_per_elf(snacklist):
     print(elves)
     print(max(elves))
 
+
 if __name__ == "__main__":
     with open("./inputs.txt", "r") as inputs:
         lines = inputs.readlines()
