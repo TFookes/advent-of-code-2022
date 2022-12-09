@@ -40,9 +40,6 @@ def move_tail(head, tail): # head, tail = (x, y)
         elif hy < ty: ## Head to the left and below tail
             tail = (tx - 1, ty - 1)
 
-    #print("HEAD: ", hx, hy)
-    #print("TAIL: ", tx, ty)
-
     return tail
 
 
@@ -67,5 +64,6 @@ if __name__ == "__main__":
             
                 visited.add(pos_tail)
 
-        print(visited)
+        sorted_coords = sorted(sorted(list(visited), key=lambda tup: tup[0]), key=lambda tup: tup[1])
+        print(sorted_coords)
         print(len(visited))
